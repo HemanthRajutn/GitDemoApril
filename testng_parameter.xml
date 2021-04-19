@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+  <parameter name = 'URL' value ="qaclickacademy.com"/>
+  <parameter name = 'UserName' value ="Hemant.Raj@wells"/>
+  
+  <listeners>
+<listener class-name = "TestNG.Listeners" />
+</listeners>
+
+  <test thread-count="5" name="Regression Suits">
+  
+  <groups>
+  <run>
+  <exclude name ="Smoke" />
+  </run>
+  </groups>
+    <classes>
+      <class name="TestNG.D135_Day1"/>
+         <class name = "TestNG.Day2" />
+         <class name = "TestNG.day3Carloan" />
+    <class name = "TestNG.day4_Home_loan" />
+   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
